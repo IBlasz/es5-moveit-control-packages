@@ -14,12 +14,17 @@ $ catkin_make
 
 ## 2. Set up an environment
 ```bash
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
-git clone 
-cd ~/catkin_ws
-catkin config --extend /opt/ros/noetic --cmake-args -DCMAKE_BUILD_TYPE=Release
-catkin build
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src
+```
+
+Clone packages from github and build your catkin workspace
+
+```bash
+$ git clone https://github.com/IBlasz/es5-moveit-control-packages.git
+$ cd ~/catkin_ws
+$ catkin config --extend /opt/ros/noetic --cmake-args -DCMAKE_BUILD_TYPE=Release
+$ catkin build
 ```
 
 Source all setup.bash files to set up your enviroment.
