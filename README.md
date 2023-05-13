@@ -1,4 +1,5 @@
 # es5-moveit-control-packages
+This is the ROS package designed by Izabella Błaszkiewicz(izaa.blaszkiewicz@gmail.com) for ES5 robot control. This package is supported by MoveIt.
 
 ## 1. Download and install
 Download ros packages for MoveIt on Ubuntu operating system.
