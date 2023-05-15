@@ -8,11 +8,6 @@ $ sudo apt-get install ros-noetic-desktop-full
 $ sudo apt install ros-noetic-moveit
 ```
 
-Compile
-```bash
-$ catkin_make
-```
-
 ## 2. Set up an environment
 ```bash
 $ mkdir -p ~/catkin_ws/src
@@ -26,6 +21,11 @@ $ git clone https://github.com/IBlasz/es5-moveit-control-packages.git
 $ cd ~/catkin_ws
 $ catkin config --extend /opt/ros/noetic --cmake-args -DCMAKE_BUILD_TYPE=Release
 $ catkin build
+```
+
+Compile
+```bash
+$ catkin_make
 ```
 
 Source all setup.bash files to set up your enviroment.
