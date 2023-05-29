@@ -11,6 +11,7 @@ $ roslaunch es_moveit_config es5_planning_execution.launch
 ```
 This package contains a custom MoveIt action server to send informations about generated trajectory to robot
 (still work in progress)
+
 To run action server, use command
 ```bash
 $ rosrun es_moveit_config es5_joint_trajectory_action_server.py
