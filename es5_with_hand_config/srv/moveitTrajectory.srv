@@ -1,0 +1,4 @@
+control_msgs/FollowJointTrajectoryActionGoal MoveitTrajectory
+---
+bool success
+string message
