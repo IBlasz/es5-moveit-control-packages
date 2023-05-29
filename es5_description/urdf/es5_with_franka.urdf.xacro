@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="es5_with_hand">
+
+  <xacro:include filename="$(find es5_description)/urdf/es5_description.xacro"/>
+  <xacro:es_description prefix=""/>
+
+  <xacro:include filename="$(find es5_description)/urdf/gripper_franka.xacro"/>
+  <xacro:hand ns="" xyz="-0.075 0 0" rpy="0 ${-pi/2} 0" connected_to="sl_6"/>
+  
+  <gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+  <robotNamespace>/</robotNamespace>
+  </plugin>
+  </gazebo>
+
+</robot>

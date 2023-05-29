@@ -1,0 +1,13 @@
+<launch>
+
+  <!-- Start Gazebo simulation with an empty world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+  <!-- Load robot model -->
+  <arg name="robot_description" default="$(find es5_description)/urdf/es5_with_franka.urdf.xacro"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(arg robot_description)'" />
+
+  <!-- Spawn robot in Gazebo -->
+  <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-urdf -param robot_description -model your_robot_name"/>
+</launch>
