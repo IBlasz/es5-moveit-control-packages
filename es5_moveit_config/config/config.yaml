@@ -1,0 +1,12 @@
+controller_list:
+  - name: manipulator_controller/joint_trajectory_controller
+    action_ns: "follow_joint_trajectory"
+    type: FollowJointTrajectory
+    joints:
+      - ESJoint1
+      - ESJoint2
+      - ESJoint3
+      - ESJoint4
+      - ESJoint5
+      - ESJoint6
+

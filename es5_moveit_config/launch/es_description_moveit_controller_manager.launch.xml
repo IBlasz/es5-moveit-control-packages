@@ -1,0 +1,15 @@
+<launch>
+
+<!-- Set the param that trajectory_execution_manager needs to find the controller plugin -->
+  <param name="moveit_controller_manager" value="moveit_simple_controller_manager/MoveItSimpleControllerManager"/>
+
+<!-- ??? -->
+  <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+
+  <param name="use_controller_manager" value="false"/>
+  <param name="trajectory_execution/execution_duration_monitoring" value="false"/>
+
+  <rosparam file="$(find es5_moveit_config)/config/config.yaml"/>
+
+
+</launch>

@@ -1,0 +1,31 @@
+# Publish joint_states
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+  
+# gazebo_ros_control:   
+#   pid_gains:
+#     ESJoint1:
+#       p: 5.0
+#       i: 1.0
+#       d: 1.0
+#     ESJoint2:
+#       p: 5.0
+#       i: 1.0
+#       d: 1.0
+#     ESJoint3:
+#       p: 5.0
+#       i: 1.0
+#       d: 1.0
+#     ESJoint4:
+#       p: 5.0
+#       i: 1.0 
+#       d: 1.0
+#     ESJoint5:
+#       p: 5.0
+#       i: 1.0 
+#       d: 1.0
+#     ESJoint6:
+#       p: 5.0
+#       i: 1.0 
+#       d: 1.0
