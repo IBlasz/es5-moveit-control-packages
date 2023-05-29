@@ -1,9 +1,0 @@
-<launch>
-
-  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
-
-  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find es5_description)/urdf/es5_with_franka.urdf.xacro"/>
-
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model robot_description"/>
-
-</launch>
